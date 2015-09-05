@@ -1,0 +1,33 @@
+<h1>SalonApp</h1>
+<p>
+
+	<div class="well">
+	
+	  <input type="text" class="form-control" placeholder="Service" aria-describedby="basic-addon1">
+	  <input type="text" class="form-control" placeholder="City" aria-describedby="basic-addon1">
+	  <input type="text" class="form-control" placeholder="Time" aria-describedby="basic-addon1">
+	
+
+	</div>
+	
+	<div class="container">
+		<h2>Serach Results</h2>
+		<% @beauticians.each do |s| %>
+		<div class="media">
+		  <div class="media-left">
+		    <a href="#">
+		      <img class="media-object" src="http://www.gravatar.com/avatar/424242" alt="...">
+		    </a>
+		  </div>
+		  <div class="media-body">
+		    <h4 class="media-heading"><%= s.name %></h4>
+		    <%= s.contactno %>
+		     <br>
+		   <%= s.salon.name %> ,  <%= s.salon.city %>
+		  </div>
+		</div>
+		<% end %>
+	</div>
+
+	
+</p>
