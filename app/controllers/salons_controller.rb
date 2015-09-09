@@ -1,2 +1,3 @@
 class SalonsController < ApplicationController
+ 
 end
